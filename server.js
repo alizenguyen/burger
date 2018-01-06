@@ -4,7 +4,7 @@ var methodOverride = require('method-override');
 
 var app = express();
 
-var PORT = process.env.PORT || 3306;
+var PORT = process.env.PORT || 8000;
 
 //Implements bodyParser
 app.use(bodyParser.json());

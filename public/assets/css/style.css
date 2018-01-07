@@ -1,3 +1,7 @@
 h1 {
-    font: 500px;
+    font-size: 40px;
+}
+
+#burg {
+    color: pink;
 }

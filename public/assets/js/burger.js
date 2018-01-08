@@ -25,10 +25,8 @@ $(function () {
 
     $(".notdevoured").on("click", function (event) {
         var id = $(this).data("id");
-        var devouredState = $(this).data("devoured");
 
         console.log(id);
-        console.log(devouredState);
 
         var newDevouredState = {
             sleepy: true,
@@ -50,15 +48,12 @@ $(function () {
 
     $(".yesdevoured").on("click", function (event) {
         var id = $(this).data("id");
-        var devouredState = $(this).data("devoured");
 
         console.log(id);
-        console.log(devouredState);
 
         var newDevouredState = {
             sleepy: true,
         };
-
 
         // Send the DELETE request.
         $.ajax("/api/burgers/" + id, {
@@ -70,7 +65,7 @@ $(function () {
                 // Reload the page to get the updated list
                 location.reload();
             }
-        );
+        );s
 
     });
 });

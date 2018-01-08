@@ -23,7 +23,7 @@ router.post("/api/burgers", function(req, res) {
     });
 });
 
-router.put("/api/burgers/:id", function(req, res) {
+router.put("/api/burgers/update/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
     console.log("condition", condition);
@@ -38,7 +38,7 @@ router.put("/api/burgers/:id", function(req, res) {
   });
 });
 
-router.delete("/api/burgers/:id", function(req, res) {
+router.delete("/api/burgers/delete/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
   cat.delete(condition, function(result) {

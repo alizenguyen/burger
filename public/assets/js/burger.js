@@ -11,7 +11,7 @@ $(function () {
         console.log(newBurger.burger_name);
 
         // Send the POST request.
-        $.ajax("/api/burgers", {
+        $.ajax("/api/burgers/update", {
             type: "POST",
             data: newBurger
         }).then(
@@ -33,7 +33,7 @@ $(function () {
         };
 
         // Send the DELETE request.
-        $.ajax("/api/burgers/" + id, {
+        $.ajax("/api/burgers/delete" + id, {
             type: "PUT",
             data: newDevouredState,
         }).then(

@@ -33,7 +33,7 @@ $(function () {
         };
 
         // Send the DELETE request.
-        $.ajax("/api/burgers/delete" + id, {
+        $.ajax("/api/burgers/update/" + id, {
             type: "PUT",
             data: newDevouredState,
         }).then(
@@ -56,7 +56,7 @@ $(function () {
         };
 
         // Send the DELETE request.
-        $.ajax("/api/burgers/" + id, {
+        $.ajax("/api/burgers/delete" + id, {
             type: "DELETE",
             data: newDevouredState,
         }).then(

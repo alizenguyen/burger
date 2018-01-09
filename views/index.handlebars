@@ -1,27 +1,21 @@
 <div class="row">
-  <div class="col-md-6">
+
+  <div class="col-sm-6">
     <ul>
       {{#each burgers}} {{#unless devoured}}
-      <br>
       <li>
-
         {{burger_name}}
-
         <button class="notdevoured" data-id="{{id}}"> EAT! </button>
-
       </li>
       {{/unless}} {{/each}}
     </ul>
   </div>
-  <div class="col-md-6">
+
+  <div class="col-sm-6">
     {{#each burgers}} {{#if devoured}}
-    <br>
     <li>
-
       {{burger_name}}
-
       <button class="yesdevoured" data-id="{{id}}">I'M FULL. DELETE!</button>
-
     </li>
     {{/if}} {{/each}}
   </div>

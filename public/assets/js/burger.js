@@ -11,7 +11,7 @@ $(function () {
         console.log(newBurger.burger_name);
 
         // Send the POST request.
-        $.ajax("/api/burgers/update", {
+        $.ajax("/api/burgers/", {
             type: "POST",
             data: newBurger
         }).then(
@@ -56,7 +56,7 @@ $(function () {
         };
 
         // Send the DELETE request.
-        $.ajax("/api/burgers/delete" + id, {
+        $.ajax("/api/burgers/delete/" + id, {
             type: "DELETE",
             data: newDevouredState,
         }).then(
@@ -65,7 +65,7 @@ $(function () {
                 // Reload the page to get the updated list
                 location.reload();
             }
-        );s
+        );
 
     });
 });
